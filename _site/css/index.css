@@ -1,0 +1,71 @@
+.background-img{
+  position: fixed;
+  opacity: .25;
+  bottom: 0;
+  right: 0;
+  transform: translate(calc(86% - (25vw * 1.5)), 35%);
+  width: calc(900px + 10vw);
+  z-index: -3;
+}
+
+/* Goals*/
+.goals-wrapper{
+  padding-top: 40px;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.goal{
+  display: flex;
+  margin-bottom: 40px;
+}
+.goal h1{
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 700px;
+}
+
+.goal div{
+  width: 300px;
+  display: grid;
+}
+.goal div img{
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-right: 50px;
+}
+.goal .small_business img{
+  width: 110px;
+}
+.goal .economy img{
+  width: 140px;
+}
+.goal .large_business img{
+  margin-bottom: -20px;
+  width: 200px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .goal{
+    flex-direction: column;
+  }
+  .goal h1{
+    width: inherit;
+  }
+  .goal div{
+    display: block;
+    padding: 20px;
+  }
+  .goal div img{
+    margin-bottom: 0px;
+  }
+  .goals-wrapper{
+    padding-left: 20px;
+    width: 95%;
+    padding-right: 20px;
+  }
+  .goal .large_business img{
+    margin-bottom: 0px;
+  }
+}

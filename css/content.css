@@ -1,0 +1,33 @@
+body{
+  font-family: 'futura-pt';
+  background-color: #F9F9F9;
+  font-weight: 700;
+}
+h1{
+  font-size: 50px;
+  line-height: 60px;
+  margin-bottom: 50px;
+}
+h2{
+  font-size: 25px;
+}
+.inline-logo{
+  margin-right: 5px;
+  width: 300px;
+  margin-bottom: -1px;
+}
+
+@media only screen and (max-width: 1000px) {
+  h1{
+    font-size: 37px;
+    line-height: 43px;
+  }
+  h2{
+    font-size: 25px;
+  }
+  .inline-logo{
+    margin-right: 5px;
+    width: 300px;
+    margin-bottom: -1px;
+  }
+}
