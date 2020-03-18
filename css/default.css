@@ -1,3 +1,9 @@
+html, body{
+  overflow-x: hidden;
+}
+html{
+  min-width: 380px;
+}
 .nav{
   background-color: #191919;
   width: 100%;
