@@ -1,0 +1,6 @@
+backend:
+  name: github
+  repo: wabusiness/wa-business
+  branch: master
+
+media_folder: "images/uploads"
