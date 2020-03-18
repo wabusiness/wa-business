@@ -9,10 +9,10 @@ collections:
   - name: "site-pages"
     label: Site Pages
     files:
-      - label: "Home Page"
-        name: "test"
-        file: "_data/test.yml"
+      - label: "Splash Page"
+        name: "splash-page"
+        file: "_data/splash.yml"
         fields:
-          - label: "Test"
-            name: "test"
-            widget: "string"
+          - label: "Body Content"
+            name: "body-content"
+            widget: "markdown"
