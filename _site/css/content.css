@@ -33,7 +33,7 @@ a{
 a:hover{
   transform: skewX(-13.13deg) translateX(2px);
 }
-i{
+em{
   font-style: italic;
 }
 strong{
