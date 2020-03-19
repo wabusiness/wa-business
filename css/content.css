@@ -19,6 +19,7 @@ p{
   font-weight: 300;
 }
 a{
+  font-family: 'futura-pt';
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   display: inline-block;
   font-size: 20px;
@@ -63,6 +64,7 @@ strong{
     font-weight: 300;
   }
   a{
+    font-family: 'futura-pt';
     font-size: 15px;
     color: white;
     background-color: black;
