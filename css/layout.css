@@ -8,9 +8,19 @@
   margin-top: 80px;
   margin-bottom: 80px;
 }
+.row{
+  margin-top: -40px;
+  display: flex;
+  justify-content: space-between;
+}
 @media only screen and (max-width: 1000px) {
   .layout-wrapper{
     width: 100%;
     width: auto;
+  }
+  .row{
+    margin-top: -10px;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
