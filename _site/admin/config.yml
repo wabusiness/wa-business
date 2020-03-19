@@ -14,5 +14,5 @@ collections:
         file: "_data/splash.yml"
         fields:
           - label: "Body Content"
-            name: "body-content"
+            name: "body_content"
             widget: "markdown"
