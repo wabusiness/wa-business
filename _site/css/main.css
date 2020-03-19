@@ -2,7 +2,7 @@ html, body{
   overflow-x: hidden;
 }
 html{
-  min-width: 380px;
+  scroll-behavior: smooth;
 }
 .nav{
   background-color: #191919;
@@ -82,27 +82,26 @@ body{
   background-color: #F9F9F9;
   font-weight: 700;
 }
-h1{
+.content h1{
   margin-top: 85px;
   margin-bottom: 10px;
   font-size: 50px;
   line-height: 52px;
 }
-h2{
+.content h2{
   font-size: 25px;
 }
-p{
+.content p{
   font-size: 30px;
   font-family: 'Roboto';
   line-height: 37px;
   font-weight: 300;
   margin-bottom: 40px;
 }
-a{
+.content a{
   font-family: 'futura-pt';
   font-weight: 700;
   line-height: 20px;
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   display: inline-block;
   font-size: 18px;
   color: white;
@@ -113,37 +112,30 @@ a{
   margin-top: 20px;
   margin-bottom: 20px;
 }
-a:hover{
-  transform: skewX(-13.13deg) translateX(2px);
-}
-em{
+.content em{
   font-style: italic;
   font-weight: 300;
 }
-strong{
+.content strong{
   font-weight: 400;
 }
-.inline-logo{
-  margin-right: 5px;
-  width: 300px;
-  margin-bottom: -1px;
-}
+
 @media only screen and (max-width: 1000px) {
-  h1{
+  .content h1{
     font-size: calc(50px / 1.5);
     line-height: 33px;
   }
-  h2{
+  .content h2{
     font-size: 25px;
   }
-  p{
+  .content p{
     font-size: calc(30px / 1.5);
     font-family: 'Roboto';
     margin-bottom: 30px;
     line-height: calc(30px);
     font-weight: 300;
   }
-  a{
+  .content a{
     font-family: 'futura-pt';
     font-size: 15px;
     color: white;
@@ -188,7 +180,18 @@ strong{
   }
 }
 
-
+.add_business{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+.add_business img{
+  padding: 25px;
+  padding-left: 25px;
+  bottom: 0;
+  height: 40px;
+  filter: drop-shadow( 0px 3px 2px rgba(0, 0, 0, .4));
+}
 
 /* Goals*/
 .goals-wrapper{
@@ -256,6 +259,11 @@ strong{
 
   .goal .large_business img{
     margin-bottom: 0px;
+  }
+  .add_business img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

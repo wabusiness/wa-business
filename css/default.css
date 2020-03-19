@@ -2,7 +2,7 @@ html, body{
   overflow-x: hidden;
 }
 html{
-  min-width: 380px;
+  scroll-behavior: smooth;
 }
 .nav{
   background-color: #191919;

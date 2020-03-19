@@ -1,4 +1,15 @@
-
+.add_business{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+.add_business img{
+  padding: 25px;
+  padding-left: 25px;
+  bottom: 0;
+  height: 40px;
+  filter: drop-shadow( 0px 3px 2px rgba(0, 0, 0, .4));
+}
 
 /* Goals*/
 .goals-wrapper{
@@ -66,5 +77,10 @@
 
   .goal .large_business img{
     margin-bottom: 0px;
+  }
+  .add_business img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
