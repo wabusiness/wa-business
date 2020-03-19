@@ -22,9 +22,6 @@ html{
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   font-size: 25px;
 }
-.content-wrapper{
-  padding-top: 0px;
-}
 @media only screen and (max-width: 1000px) {
   .coming-soon{
     padding-top: 27px;
