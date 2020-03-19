@@ -181,15 +181,7 @@ strong{
   }
 }
 
-.background-img{
-  position: fixed;
-  opacity: .25;
-  bottom: 0;
-  right: 0;
-  transform: translate(calc(86% - (25vw * 1.5)), 35%);
-  width: calc(900px + 10vw);
-  z-index: -3;
-}
+
 
 /* Goals*/
 .goals-wrapper{
