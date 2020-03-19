@@ -178,24 +178,30 @@ h2{
 @media only screen and (max-width: 1000px) {
   .goal{
     flex-direction: column;
+    align-items: center;
   }
   .goal h1{
     width: inherit;
-    font-size: 30px;
+    font-size: 35px;
+    line-height: 40px;
+    text-align: center;
+    max-width: 550px;
   }
   .goal div{
-    display: block;
     padding: 20px;
   }
   .goal div img{
     margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .goals-wrapper{
-    margin-top: 100px;
+    padding-top: 10px;
     padding-left: 20px;
     width: 90%;
     padding-right: 20px;
   }
+
   .goal .large_business img{
     margin-bottom: 0px;
   }
