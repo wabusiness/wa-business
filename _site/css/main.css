@@ -77,6 +77,15 @@ table {
 	border-spacing: 0;
 }
 
+a{
+  -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
 body{
   font-family: 'futura-pt';
   background-color: #F9F9F9;
