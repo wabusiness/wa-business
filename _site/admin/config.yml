@@ -16,3 +16,10 @@ collections:
           - label: "Body Content"
             name: "body_content"
             widget: "markdown"
+      - label: "Terms of Service"
+        name: "terms_of_service"
+        file: "_data/terms_of_service.yml"
+        fields:
+          - label: "Content"
+            name: "content"
+            widget: "markdown"
