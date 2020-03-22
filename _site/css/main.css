@@ -91,6 +91,9 @@ body{
   background-color: #F9F9F9;
   font-weight: 700;
 }
+.content:first-child h1{
+  margin-top: 0px;
+}
 .content h1{
   margin-top: 85px;
   margin-bottom: 10px;
