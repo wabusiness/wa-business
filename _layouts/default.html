@@ -3,23 +3,40 @@
   <head>
     <meta charset="utf-8">
     <title>{{page.title}}</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/scripts/main.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/oxi7yvm.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="/css/main.css">
   </head>
   <body>
     <div class="nav">
-      <img class="logo" src="images/svg/logo_white.svg">
+      {% if page.url == "/"%}
+        <img class="logo" src="/images/svg/logo_white.svg">
+      {% else %}
+        <div class="nav-link home-button">
+          <a href="/">
+            <img src="/images/svg/home_button.svg">
+            <hr>
+          </a>
+        </div>
+      {% endif %}
+
       <div class="coming-soon">
         coming soon!
       </div>
     </div>
-
+    <div style="background: #49D6B1; height: 8px;"></div>
     <div class="content-wrapper">
       {{content}}
     </div>
+    <div class="footer">
+      <div class="nav-link">
+          <a href="/terms-of-service/">Terms of Service<hr></a>
 
+      </div>
+    </div>
     <!--Removes chrome animation on load glitch-->
     <script> </script>
   </body>
