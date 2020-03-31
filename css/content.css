@@ -3,7 +3,7 @@ body{
   background-color: #F9F9F9;
   font-weight: 700;
 }
-.content:first-child h1{
+.content h1:first-child{
   margin-top: 0px;
 }
 .content h1{

@@ -11,7 +11,6 @@ html{
   height: 70px;
 }
 
-
 .coming-soon{
   text-align: right;
   color: white;
@@ -19,16 +18,41 @@ html{
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   font-size: 25px;
 }
+.page-container{
+  position: relative;
+  /* subtracting length of footer */
+  min-height: calc(100vh - 78px);
+  padding-bottom: 78px;
+}
 /*Content*/
 .content-wrapper{
-  margin-top: 40px;
+  padding-bottom: 50px;
   position: relative;
 }
 /*Footer*/
 .footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   background-color: #191919;
-  padding: 20px;
+  height: 70px;
   display: flex;
+  border-top: solid #49D6B1 8px;
+}
+.footer-links{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+}
+
+.home-button-footer{
+  position: absolute;
+  bottom: 0;
+  padding-left: 25px;
+  margin: 0px;
 }
 /* Links*/
 .nav-link{
@@ -36,7 +60,9 @@ html{
   display: block;
   margin-left: auto;
   margin-right: auto;
+
 }
+
 .nav-link a{
   font-size: 20px;
   display: inline-block;
@@ -71,7 +97,8 @@ html{
   padding-left: 25px;
   margin: 0px;
 }
-.home-button img{
+.home-button img,
+.home-button-footer img{
   height: 30px;
 }
 .home_button hr{

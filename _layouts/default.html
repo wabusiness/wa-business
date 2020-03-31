@@ -11,32 +11,47 @@
     <link rel="stylesheet" href="/css/main.css">
   </head>
   <body>
-    <div class="nav">
-      {% if page.url == "/"%}
-        <img class="logo" src="/images/svg/logo_white.svg">
-      {% else %}
-        <div class="nav-link home-button">
-          <a href="/">
-            <img src="/images/svg/home_button.svg">
-            <hr>
-          </a>
+    <div class="page-container">
+      <div class="content-wrapper">
+        <div class="nav">
+          {% if page.url == "/"%}
+            <img class="logo" src="/images/svg/logo_white.svg">
+          {% else %}
+            <div class="nav-link home-button">
+              <a href="/">
+                <img src="/images/svg/home_button.svg">
+                <hr>
+              </a>
+            </div>
+          {% endif %}
+
+          <div class="coming-soon">
+            coming soon!
+          </div>
         </div>
-      {% endif %}
+        <div style="background: #49D6B1; height: 8px;"></div>
+          {{content}}
+      </div>
+      <div class="footer">
+        <div class="footer-links">
+          {% if page.url == "/"%}
+            <div class="nav-link">
+                <a href="/terms-of-service/">Terms of Service<hr></a>
+            </div>
+          {% endif %}
+          {% if page.url != "/"%}
+            <div class="nav-link home-button-footer">
+              <a href="/">
+                <img src="/images/svg/home_button.svg">
+                <hr>
+              </a>
+            </div>
+          {% endif %}
+        </div>
 
-      <div class="coming-soon">
-        coming soon!
       </div>
     </div>
-    <div style="background: #49D6B1; height: 8px;"></div>
-    <div class="content-wrapper">
-      {{content}}
-    </div>
-    <div class="footer">
-      <div class="nav-link">
-          <a href="/terms-of-service/">Terms of Service<hr></a>
 
-      </div>
-    </div>
     <!--Removes chrome animation on load glitch-->
     <script> </script>
   </body>
