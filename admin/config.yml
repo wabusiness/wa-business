@@ -23,3 +23,19 @@ collections:
           - label: "Content"
             name: "content"
             widget: "markdown"
+  - name: "business"
+    label: Business
+    folder: _businesses
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - label: "Name"
+        name: "name"
+        widget: "string"
+      - label: "Description"
+        name: "description"
+        widget: "markdown"
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "business"

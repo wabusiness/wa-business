@@ -1,0 +1,12 @@
+---
+layout: default
+title: Directory
+---
+<br>
+{% for business in site.businesses %}
+  {{business.name}}
+  {{business.description | markdownify}}
+  <a href="{{business.url}}">see more</a>
+
+  <br>
+{% endfor %}
