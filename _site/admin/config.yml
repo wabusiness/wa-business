@@ -38,6 +38,3 @@ collections:
         name: "layout"
         widget: "hidden"
         default: "business"
-      - label: "Test"
-        name: "test"
-        widget: "string"
