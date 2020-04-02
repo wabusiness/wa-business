@@ -27,10 +27,9 @@ collections:
     label: Business
     folder: _businesses
     create: true
-    slug: "{{slug}}"
     fields:
       - label: "Name"
-        name: "name"
+        name: "title"
         widget: "string"
       - label: "Description"
         name: "description"
