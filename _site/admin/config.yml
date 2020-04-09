@@ -38,3 +38,7 @@ collections:
         name: "layout"
         widget: "hidden"
         default: "business"
+      - name: "categories"
+        label: "Categories"
+        widget: "list"
+        field: {label: Category, name: category, widget: string}
