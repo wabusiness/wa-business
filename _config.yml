@@ -1,3 +1,6 @@
 collections:
   businesses:
     output: true
+
+pagination: 5
+businesses: "/businesses/page:num/"
