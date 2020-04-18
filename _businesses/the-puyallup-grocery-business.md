@@ -6,6 +6,6 @@ categories: grocery, puyallup
 hotbar:
   - label: Delivery
     icon: images/uploads/hotbutton_delivery.svg
-  - label: Testing
-    icon: images/uploads/hotbutton_delivery.svg
+  - label: Location
+    icon: /images/uploads/hotbutton_marker.svg
 ---
