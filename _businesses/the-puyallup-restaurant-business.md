@@ -10,4 +10,13 @@ hotbar:
   - label: mimi site
     icon: /images/uploads/hotbutton_website.svg
     link: http://crooked.studio
+  - label: Call
+    icon: /images/uploads/hotbutton_call.svg
+    link: "#Call"
+  - label: Shop
+    icon: /images/uploads/hotbutton_shopping.svg
+    link: "#Shop"
+  - label: Takeout
+    icon: /images/uploads/hotbutton_takeout.svg
+    link: "#Takeout"
 ---
