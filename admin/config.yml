@@ -38,6 +38,12 @@ collections:
         name: "layout"
         widget: "hidden"
         default: "business"
-      - name: "categories"
-        label: "Categories"
+      - label: "Categories"
+        name: "categories"
         widget: "string"
+      - label: "Hotbar"
+        name: "hotbar"
+        widget: "list"
+        fields:
+          - {label: Label, name: label, widget: string, default: "Delivery" }
+          - {label: Icon, name: icon, widget: image, default: "images/svg/icons/delivery.svg" }
