@@ -1,6 +1,6 @@
 ---
-title: The Puyallup Restaurant Business
-description: A restaurant located in Puyallup.
+title: The Mimi Store
+description: A store of mimi's.
 layout: business
 categories: restaurant, puyallup
 hotbar:
