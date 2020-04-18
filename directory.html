@@ -4,9 +4,7 @@ title: Directory
 ---
 <br>
 {% for business in site.businesses %}
-  {{business.name}}
-  {{business.description | markdownify}}
-  <a href="{{business.url}}">see more</a>
-
+  <a href="{{business.url}}">{{business.title}}</a>
+  <br>
   <br>
 {% endfor %}

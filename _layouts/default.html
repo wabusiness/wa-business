@@ -4,34 +4,31 @@
     <meta charset="utf-8">
     <title>{% if page.url != "/"%}{{page.title}} | WA.Business{% else %}WA.business{% endif %}</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="/scripts/main.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/oxi7yvm.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/main.css">
+    <!--<link rel="stylesheet" href="/css/main.css">-->
+    <link rel="stylesheet" href="/css/styles.css">
   </head>
   <body>
+    <div class="nav">
+      {% if page.url == "/"%}
+        <img class="logo" src="/images/svg/logo_white.svg">
+      {% else %}
+        <div class="nav-link home-button">
+          <a href="/">
+            <img src="/images/svg/home_button.svg">
+            <hr>
+          </a>
+        </div>
+      {% endif %}
+    </div>
     <div class="page-container">
       <div class="content-wrapper">
-        <div class="nav">
-          {% if page.url == "/"%}
-            <img class="logo" src="/images/svg/logo_white.svg">
-          {% else %}
-            <div class="nav-link home-button">
-              <a href="/">
-                <img src="/images/svg/home_button.svg">
-                <hr>
-              </a>
-            </div>
-          {% endif %}
 
-          <div class="coming-soon">
-            coming soon!
-          </div>
-        </div>
-        <div style="background: #49D6B1; height: 8px;"></div>
           {{content}}
       </div>
+      {% if page.url == "/"%}
       <div class="footer">
         <div class="footer-links">
           {% if page.url == "/"%}
@@ -48,11 +45,13 @@
             </div>
           {% endif %}
         </div>
-
       </div>
+      {% endif %}
+
     </div>
 
     <!--Removes chrome animation on load glitch-->
     <script> </script>
   </body>
+  <script src="/scripts/main.js"></script>
 </html>

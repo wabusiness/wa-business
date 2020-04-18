@@ -1,0 +1,155 @@
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain) */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+body { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+a { -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+
+body { font-family: 'futura-pt'; background-color: #F9F9F9; font-weight: 700; }
+
+.content h1:first-child { margin-top: 0px; }
+
+.content h1 { margin-top: 85px; margin-bottom: 10px; font-size: 50px; line-height: 52px; }
+
+.content h2 { font-size: 25px; }
+
+.content p { font-size: 30px; font-family: 'Roboto'; line-height: 37px; font-weight: 300; margin-bottom: 40px; }
+
+.content a { font-family: 'futura-pt'; font-weight: 700; line-height: 20px; display: inline-block; font-size: 18px; color: white; background-color: black; border-bottom: solid #49D6B1 8px; text-decoration: none; padding: 13px; margin-top: 20px; margin-bottom: 20px; }
+
+.content em { font-style: italic; font-weight: 300; }
+
+.content strong { font-weight: 400; }
+
+@media only screen and (max-width: 1000px) { .content h1 { font-size: calc(50px / 1.5); line-height: 33px; }
+  .content h2 { font-size: 25px; }
+  .content p { font-size: calc(30px / 1.5); font-family: 'Roboto'; margin-bottom: 30px; line-height: calc(30px); font-weight: 300; }
+  .content a { font-family: 'futura-pt'; font-size: 15px; color: white; background-color: black; border-bottom: solid #49D6B1 6px; text-decoration: none; padding: 10px; margin-bottom: 5px; }
+  .inline-logo { margin-right: 5px; width: 300px; margin-bottom: -1px; } }
+
+.layout-wrapper { padding: 40px; width: 750px; margin-left: auto; margin-right: auto; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); background: white; margin-bottom: 30px; margin-top: 80px; }
+
+.row { margin-top: -40px; display: flex; justify-content: space-between; }
+
+@media only screen and (max-width: 1000px) { .layout-wrapper { width: 100%; width: auto; margin-bottom: -50px; margin-top: 0px; }
+  .row { margin-top: -35px; flex-direction: column; align-items: flex-start; margin-bottom: 40px; } }
+
+.floating-button { background-color: #3dac9b; border-radius: 40px; text-decoration: none; color: white; padding: 8px 20px; font-size: 23px; font-family: 'futura-pt'; font-weight: 600; filter: drop-shadow(0px 3px 2px rgba(0, 0, 0, 0.2)); }
+
+.floating-button img { height: 35px; padding-right: 5px; margin-bottom: -2px; }
+
+.floating-button--large { font-size: 40px; }
+
+.floating-button--large img { height: 35px; margin-right: -30px; margin-left: -30px; }
+
+.banner-wrapper { /*90vh Pushes all content under viewport*/ height: calc(60vh + 10vw); }
+
+.contener-wrapper { position: absolute; left: 0; right: 0; width: 100vw; display: grid; }
+
+.banner-wrapper a { margin-left: auto; margin-right: auto; margin-top: 40px; }
+
+.banner-wrapper a img { width: 150px; }
+
+.banner-wrapper p { margin-top: 20px; font-size: 40px; text-align: center; padding-left: 20px; padding-right: 20px; line-height: 35px; }
+
+.banner-wrapper h1 { position: absolute; transform: translateY(50px); text-align: center; width: 100vw; }
+
+.banner-wrapper .wordmark { margin-top: 40px; margin-left: auto; margin-right: auto; display: block; width: 350px; }
+
+.banner-wrapper .image { /*Crop sides*/ width: 110vw; /*fix offset from crop*/ transform: translateX(-4vw) translateY(-70%); /*90vh for consistent margin across desktop and mobile*/ margin-top: calc(70vh + 10vw); /*No seletion*/ user-drag: none; user-select: none; -moz-user-select: none; -webkit-user-drag: none; -webkit-user-select: none; -ms-user-select: none; }
+
+@media only screen and (max-width: 1000px) { .banner-wrapper .wordmark { width: 250px; }
+  .banner-wrapper p { font-size: 30px; } }
+
+@media only screen and (max-width: 700px) { .banner-wrapper .image { /*Crop sides*/ width: 130vw; transform: translateX(-18vw) translateY(-70%); } }
+
+.shadow { height: 300px; position: absolute; width: 100vw; top: 0; margin-top: 100vh; transform: translateY(-120px); box-shadow: 0px -5px 5px rgba(50, 50, 50, 0.16); background-color: #F9F9F9; }
+
+.about_button { z-index: 100; position: absolute; margin-top: 100vh; top: 0; width: 100%; display: grid; transform: translateY(-140px); }
+
+.about_button a { margin-left: auto; margin-right: auto; }
+
+/* Goals*/
+.goals-wrapper { padding-top: 150px; margin-top: -6vw; width: 100vw; position: relative; z-index: 10; width: 1000px; margin-left: auto; margin-right: auto; margin-bottom: 80px; }
+
+.goal { display: flex; margin-top: 60px; }
+
+.goal h1 { margin-top: auto; margin-bottom: auto; width: 700px; }
+
+.goal div { width: 300px; display: grid; }
+
+.goal div img { margin-left: auto; margin-top: auto; margin-bottom: auto; padding-right: 50px; }
+
+.goal .small_business img { width: 110px; }
+
+.goal .economy img { width: 140px; }
+
+.goal .large_business img { margin-bottom: -20px; width: 200px; }
+
+.add_business { width: 100%; position: fixed; bottom: 0; z-index: 100; margin-bottom: 20px; display: flex; margin-left: 20px; transition: 20px; transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+
+.add_business-hidden { transform: translateY(75px); }
+
+@media only screen and (max-width: 1000px) { .goals-wrapper { padding-left: 20px; width: 90%; padding-right: 20px; }
+  .goal { flex-direction: column; align-items: center; }
+  .goal h1 { width: inherit; font-size: 35px; line-height: 40px; text-align: center; max-width: 550px; }
+  .goal div img { padding: 20px; margin-bottom: 0px; margin-left: auto; margin-right: auto; }
+  .goal .large_business img { margin-bottom: 0px; }
+  .add_business { margin-left: 0px; }
+  .add_business a { margin-left: auto; margin-right: auto; } }
+
+.business-hotbar { position: fixed; top: 0; height: 100vh; width: 75px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+
+.hotbar-margin { transform: translate(5%); }
+
+@media only screen and (max-width: 1000px) { .hotbar-margin { transform: translate(0); }
+  .business-hotbar { margin-top: 100vh; transform: translateY(-100%); position: fixed; z-index: 100000; height: 75px; width: 100%; left: 0; bottom: 0; background-color: blue; } }
+
+html, body { overflow-x: hidden; }
+
+html { scroll-behavior: smooth; }
+
+/*Navigation*/
+.nav { background-color: #191919; width: 100%; height: 70px; border-bottom: solid #49D6B1 8px; position: fixed; z-index: 1000; }
+
+.page-container { padding-top: 78px; position: relative; /* subtracting length of footer */ min-height: calc(100vh - 78px); padding-bottom: 78px; }
+
+/*Content*/
+.content-wrapper { padding-bottom: 50px; position: relative; }
+
+/*Footer*/
+.footer { position: absolute; bottom: 0; width: 100%; background-color: #191919; height: 70px; display: flex; border-top: solid #49D6B1 8px; z-index: 1000; }
+
+.footer-links { display: flex; align-items: center; position: absolute; bottom: 0; width: 100%; padding: 10px; }
+
+.home-button-footer { position: absolute; bottom: 0; padding-left: 25px; margin: 0px; }
+
+/* Links*/
+.nav-link { margin-top: 15px; display: block; margin-left: auto; margin-right: auto; }
+
+.nav-link a { font-size: 20px; display: inline-block; transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); color: white; text-decoration: none; }
+
+.nav-link hr { margin-top: 2px; transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); transform-origin: 0; transform: scaleX(0); border: none; height: 3px; width: 100%; background-color: white; }
+
+.nav-link a:hover hr { transform: scaleX(1); }
+
+.logo { position: absolute; height: 30px; padding: 20px; padding-left: 25px; z-index: 5; }
+
+.home-button { position: absolute; padding: 20px; padding-left: 25px; margin: 0px; }
+
+.home-button img, .home-button-footer img { height: 30px; }
+
+@media only screen and (max-width: 1000px) { .coming-soon { padding-top: 27px; } }
+
+/*# sourceMappingURL=styles.css.map */
