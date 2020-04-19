@@ -83,7 +83,7 @@ body { font-family: 'futura-pt'; background-color: #F9F9F9; font-weight: 700; }
 .about_button a { margin-left: auto; margin-right: auto; }
 
 /* Goals*/
-.goals-wrapper { padding-top: 50px; margin-top: -6vw; width: 100vw; position: relative; z-index: 10; width: 1000px; margin-left: auto; margin-right: auto; margin-bottom: 80px; }
+.goals-wrapper { padding-top: 30px; margin-top: -6vw; width: 100vw; position: relative; z-index: 10; width: 1000px; margin-left: auto; margin-right: auto; margin-bottom: 80px; }
 
 .goal { display: flex; margin-top: 60px; }
 
