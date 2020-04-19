@@ -46,4 +46,5 @@ collections:
         widget: "list"
         fields:
           - {label: Label, name: label, widget: string, default: "Delivery" }
-          - {label: Icon, name: icon, widget: image, default: "images/uploads/hotbutton_delivery.svg" }
+          - {label: Link, name: link, widget: string}
+          - {label: Icon, name: icon, widget: image, default: "/images/uploads/hotbutton_delivery.svg" }

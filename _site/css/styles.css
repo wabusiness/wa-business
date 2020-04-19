@@ -38,7 +38,7 @@ body { font-family: 'futura-pt'; background-color: #F9F9F9; font-weight: 700; }
   .content a { font-family: 'futura-pt'; font-size: 15px; color: white; background-color: black; border-bottom: solid #49D6B1 6px; text-decoration: none; padding: 10px; margin-bottom: 5px; }
   .inline-logo { margin-right: 5px; width: 300px; margin-bottom: -1px; } }
 
-.layout-wrapper { padding: 40px; width: 750px; margin-left: auto; margin-right: auto; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); background: white; margin-bottom: 30px; margin-top: 80px; }
+.layout-wrapper { position: relative; z-index: 10; padding: 40px; width: 750px; margin-left: auto; margin-right: auto; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); background: white; margin-bottom: 30px; margin-top: 80px; }
 
 .row { margin-top: -40px; display: flex; justify-content: space-between; }
 
@@ -67,21 +67,23 @@ body { font-family: 'futura-pt'; background-color: #F9F9F9; font-weight: 700; }
 
 .banner-wrapper .wordmark { margin-top: 40px; margin-left: auto; margin-right: auto; display: block; width: 350px; }
 
-.banner-wrapper .image { /*Crop sides*/ width: 110vw; /*fix offset from crop*/ transform: translateX(-4vw) translateY(-70%); /*90vh for consistent margin across desktop and mobile*/ margin-top: calc(70vh + 10vw); /*No seletion*/ user-drag: none; user-select: none; -moz-user-select: none; -webkit-user-drag: none; -webkit-user-select: none; -ms-user-select: none; }
+.banner-wrapper .image { /*Crop sides*/ width: 110vw; /*fix offset from crop*/ transform: translateX(-4vw) translateY(-70%); /*90vh for consistent margin across desktop and mobile*/ margin-top: calc(70vh + 10vw); /*No seletion*/ user-drag: none; user-select: none; -moz-user-select: none; -webkit-user-drag: none; -webkit-user-select: none; -ms-user-select: none; position: fixed; }
 
 @media only screen and (max-width: 1000px) { .banner-wrapper .wordmark { width: 250px; }
   .banner-wrapper p { font-size: 30px; } }
 
 @media only screen and (max-width: 700px) { .banner-wrapper .image { /*Crop sides*/ width: 130vw; transform: translateX(-18vw) translateY(-70%); } }
 
-.shadow { height: 300px; position: absolute; width: 100vw; top: 0; margin-top: 100vh; transform: translateY(-120px); box-shadow: 0px -5px 5px rgba(50, 50, 50, 0.16); background-color: #F9F9F9; }
+.fold-wrapper { margin-top: 200px; margin-bottom: -100px; position: relative; z-index: 2; background-color: #F9F9F9; padding-bottom: 100px; }
+
+.shadow { height: 100vh; position: absolute; width: 100vw; top: 0; margin-top: 100vh; transform: translateY(-120px); box-shadow: 0px -5px 5px rgba(50, 50, 50, 0.16); background-color: #F9F9F9; }
 
 .about_button { z-index: 100; position: absolute; margin-top: 100vh; top: 0; width: 100%; display: grid; transform: translateY(-140px); }
 
 .about_button a { margin-left: auto; margin-right: auto; }
 
 /* Goals*/
-.goals-wrapper { padding-top: 150px; margin-top: -6vw; width: 100vw; position: relative; z-index: 10; width: 1000px; margin-left: auto; margin-right: auto; margin-bottom: 80px; }
+.goals-wrapper { padding-top: 50px; margin-top: -6vw; width: 100vw; position: relative; z-index: 10; width: 1000px; margin-left: auto; margin-right: auto; margin-bottom: 80px; }
 
 .goal { display: flex; margin-top: 60px; }
 
@@ -109,12 +111,19 @@ body { font-family: 'futura-pt'; background-color: #F9F9F9; font-weight: 700; }
   .add_business { margin-left: 0px; }
   .add_business a { margin-left: auto; margin-right: auto; } }
 
-.business-hotbar { position: fixed; bottom: 0; height: 90vh; width: 75px; background: white; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+.business-hotbar { position: fixed; bottom: 0; height: 90vh; width: 100px; background: white; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); display: flex; flex-direction: column; align-items: center; }
 
-.hotbar-margin { transform: translate(5%); }
+.business-hotbar .button { margin-top: 50px; text-decoration: none; }
+
+.business-hotbar .button img { height: 40px; display: block; margin-left: auto; margin-right: auto; }
+
+.business-hotbar .button p { margin-top: 5px; font-size: 13px; text-align: center; color: black; }
+
+.hotbar-margin { transform: translate(7%); }
 
 @media only screen and (max-width: 1000px) { .hotbar-margin { transform: translate(0); }
-  .business-hotbar { top: 0; margin-top: 100vh; transform: translateY(-100%); position: fixed; z-index: 100000; height: 75px; width: 100%; left: 0; bottom: 0; } }
+  .business-hotbar { flex-direction: row; justify-content: space-around; top: 0; margin-top: 100vh; transform: translateY(-100%); position: fixed; z-index: 100000; height: 75px; width: 100%; left: 0; bottom: 0; }
+  .business-hotbar .button { margin-top: 0px; } }
 
 html, body { overflow-x: hidden; }
 

@@ -22,39 +22,42 @@ title: WA.business
 
 <div class="shadow"></div>
 
-<div id="goals" class="content goals-wrapper">
-  <div class="goal">
-    <div class="small_business">
-      <img src="images/svg/small_business.svg">
-    </div>
+<div class="fold-wrapper">
+  <div id="goals" class="content goals-wrapper">
+    <div class="goal">
+      <div class="small_business">
+        <img src="images/svg/small_business.svg">
+      </div>
 
-    <h1>Support small businesses.</h1>
-  </div>
-  <div class="goal">
-    <div class="economy">
-      <img src="images/svg/economy.svg">
+      <h1>Support small businesses.</h1>
     </div>
-    <h1>Help the struggling local&nbsp;economy.</h1>
-  </div>
-  <div class="goal">
-    <div class="large_business">
-      <img src="images/svg/large_business.svg">
+    <div class="goal">
+      <div class="economy">
+        <img src="images/svg/economy.svg">
+      </div>
+      <h1>Help the struggling local&nbsp;economy.</h1>
     </div>
-    <h1>Practice social distancing by shopping small and local,
-not big and crowded.</h1>
+    <div class="goal">
+      <div class="large_business">
+        <img src="images/svg/large_business.svg">
+      </div>
+      <h1>Practice social distancing by shopping small and local,
+  not big and crowded.</h1>
+    </div>
+    <h1></h1>
   </div>
-  <h1></h1>
+
+  <div class="content layout-wrapper">
+    {{site.data.splash.body_content | markdownify}}
+    <div class="row">
+      <div id="contact" style="position:absolute; margin-top: -410px;"></div>
+      <a href="tel:360 890 8997">360 890 8997</a>
+      <a href="mailto:hello@rainshade.design">hello@rainshade.design</a>
+      <a href="http://www.rainshade.design">www.rainshade.design</a>
+    </div>
+  </div>
 </div>
 
-<div class="content layout-wrapper">
-  {{site.data.splash.body_content | markdownify}}
-  <div class="row">
-    <div id="contact" style="position:absolute; margin-top: -410px;"></div>
-    <a href="tel:360 890 8997">360 890 8997</a>
-    <a href="mailto:hello@rainshade.design">hello@rainshade.design</a>
-    <a href="http://www.rainshade.design">www.rainshade.design</a>
-  </div>
-</div>
 
 <div class="add_business add_business-hidden">
   <a href="#contact" class="floating-button">

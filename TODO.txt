@@ -1,1 +1,2 @@
 icons with cms capabilities before 11
+Figure out how to loop through yaml list
