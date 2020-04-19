@@ -61,26 +61,30 @@ body { font-family: 'futura-pt'; background-color: #F9F9F9; font-weight: 700; }
 
 .banner-wrapper a img { width: 150px; }
 
-.banner-wrapper p { margin-top: 20px; font-size: 40px; text-align: center; padding-left: 20px; padding-right: 20px; line-height: 35px; }
+.banner-wrapper p { position: relative; z-index: 3; margin-top: 20px; font-size: 40px; text-align: center; padding-left: 20px; padding-right: 20px; line-height: 35px; }
 
 .banner-wrapper h1 { position: absolute; transform: translateY(50px); text-align: center; width: 100vw; }
 
 .banner-wrapper .wordmark { margin-top: 40px; margin-left: auto; margin-right: auto; display: block; width: 350px; }
 
-.banner-wrapper .image { /*Crop sides*/ width: 110vw; /*fix offset from crop*/ transform: translateX(-4vw) translateY(-70%); /*90vh for consistent margin across desktop and mobile*/ margin-top: calc(70vh + 10vw); /*No seletion*/ user-drag: none; user-select: none; -moz-user-select: none; -webkit-user-drag: none; -webkit-user-select: none; -ms-user-select: none; position: fixed; }
+.banner-wrapper .image { /*Crop sides*/ width: 110vw; /*fix offset from crop*/ transform: translateX(-4vw) translateY(-75%); /*90vh for consistent margin across desktop and mobile*/ margin-top: calc(70vh + 10vw); /*No seletion*/ user-drag: none; user-select: none; -moz-user-select: none; -webkit-user-drag: none; -webkit-user-select: none; -ms-user-select: none; position: fixed; }
 
 @media only screen and (max-width: 1000px) { .banner-wrapper .wordmark { width: 250px; }
   .banner-wrapper p { font-size: 30px; } }
 
-@media only screen and (max-width: 700px) { .banner-wrapper .image { /*Crop sides*/ width: 130vw; transform: translateX(-18vw) translateY(-70%); } }
+@media only screen and (max-width: 700px) { .banner-wrapper .image { /*Crop sides*/ width: 130vw; transform: translateX(-18vw) translateY(-100%); } }
 
 .fold-wrapper { margin-top: 200px; margin-bottom: -100px; position: relative; z-index: 2; background-color: #F9F9F9; padding-bottom: 100px; }
 
 .shadow { height: 100vh; position: absolute; width: 100vw; top: 0; margin-top: 100vh; transform: translateY(-120px); box-shadow: 0px -5px 5px rgba(50, 50, 50, 0.16); background-color: #F9F9F9; }
 
+@media only screen and (max-width: 700px) { .shadow { transform: translateY(-170px); } }
+
 .about_button { z-index: 100; position: absolute; margin-top: 100vh; top: 0; width: 100%; display: grid; transform: translateY(-140px); }
 
 .about_button a { margin-left: auto; margin-right: auto; }
+
+@media only screen and (max-width: 700px) { .about_button { transform: translateY(-190px); } }
 
 /* Goals*/
 .goals-wrapper { padding-top: 30px; margin-top: -6vw; width: 100vw; position: relative; z-index: 10; width: 1000px; margin-left: auto; margin-right: auto; margin-bottom: 80px; }

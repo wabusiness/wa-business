@@ -19,6 +19,8 @@
   }
 }
 .banner-wrapper p{
+  position: relative;
+  z-index: 3;
   margin-top: 20px;
   font-size: 40px;
   text-align: center;
@@ -44,7 +46,7 @@
   /*Crop sides*/
   width: 110vw;
   /*fix offset from crop*/
-  transform: translateX(-4vw) translateY(-70%);
+  transform: translateX(-4vw) translateY(-75%);
   /*90vh for consistent margin across desktop and mobile*/
   margin-top: calc(70vh + 10vw);
   /*No seletion*/
@@ -70,7 +72,7 @@
   .banner-wrapper .image{
     /*Crop sides*/
     width: 130vw;
-    transform: translateX(-18vw) translateY(-70%);
+    transform: translateX(-18vw) translateY(-100%);
   }
 
 }
@@ -90,7 +92,11 @@
   margin-top: 100vh;
   transform: translateY(-120px);
   box-shadow: 0px -5px 5px rgba(50, 50, 50, 0.16);
-  background-color: #F9F9F9
+  background-color: #F9F9F9;
+
+  @media only screen and (max-width: 700px) {
+    transform: translateY(-170px);
+  }
 }
 .about_button{
   z-index: 100;
@@ -103,6 +109,9 @@
   a{
     margin-left: auto;
     margin-right: auto;
+  }
+  @media only screen and (max-width: 700px) {
+    transform: translateY(-190px);
   }
 }
 /* Goals*/
