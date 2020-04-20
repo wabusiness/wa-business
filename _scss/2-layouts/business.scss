@@ -1,5 +1,10 @@
 .business-hotbar{
+  //give nav it's own compsite layer
+	will-change:transform;
+	transform: translateZ(0);
+
   position: fixed;
+  overflow-y: hidden;
   bottom: 0;
   height: 90vh;
   width: 100px;
@@ -25,16 +30,7 @@
       color: black;
     }
   }
-}
-
-.hotbar-margin{
-  transform: translate(7%);
-}
-@media only screen and (max-width: 1000px){
-  .hotbar-margin{
-    transform: translate(0);
-  }
-  .business-hotbar{
+  @media only screen and (max-width: 1000px){
     flex-direction: row;
     justify-content: space-around;
     top: 0;
@@ -49,5 +45,35 @@
     .button{
         margin-top: 0px;
     }
+  }
+}
+
+.hotbar-margin{
+  transform: translate(5.5%);
+  @media only screen and (max-width: 1000px){
+    transform: translate(0);
+  }
+}
+
+.business-layout-wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  margin: 20px auto;
+  width: 1000px;
+  .header{
+    grid-column: span 2;
+  }
+  @media only screen and (max-width: 1150px){
+    width: 640px;
+    grid-template-columns: 1fr;
+    .header{
+      grid-column: span 1;
+    }
+  }
+
+  @media only screen and (max-width: 700px){
+    margin: 20px;
+    width: auto;
   }
 }

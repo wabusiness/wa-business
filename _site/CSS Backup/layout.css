@@ -1,4 +1,4 @@
-.layout-wrapper{
+.basic-layout{
   padding: 40px;
   width: 750px;
   margin-left: auto;
@@ -15,7 +15,7 @@
   justify-content: space-between;
 }
 @media only screen and (max-width: 1000px) {
-  .layout-wrapper{
+  .basic-layout{
     width: 100%;
     width: auto;
     margin-bottom: -50px;
