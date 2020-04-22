@@ -54,6 +54,7 @@
 .business-layout-wrapper{
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-row-end: auto;
   grid-gap: 20px;
   margin: 20px auto;
   width: 1000px;
@@ -72,4 +73,9 @@
     margin: 20px;
     width: auto;
   }
+}
+
+.content-block{
+  display: block;
+  overflow: auto;
 }
