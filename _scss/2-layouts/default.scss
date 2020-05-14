@@ -15,11 +15,13 @@ html{
   z-index: 1000;
 }
 .page-container{
-  padding-top: 78px;
   position: relative;
   /* subtracting length of footer */
   min-height: calc(100vh - 78px);
   padding-bottom: 78px;
+}
+.page-container--nav-space{
+  padding-top: 78px;
 }
 /*Content*/
 .content-wrapper{

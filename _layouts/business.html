@@ -2,15 +2,30 @@
 layout: default
 title: {{title}}
 ---
-<div class="business-hotbar">
-  {% for hotbutton in page.hotbar %}
-  <a href= "{{hotbutton.link}}" class="button">
-    <img src="{{hotbutton.icon}}">
-    <p>{{hotbutton.label}}</p>
-  </a>
-
-  {% endfor %}
+<div class="fixed-hotbar">
+  <div class="business-nav">
+    <div class="left-nav-end">
+      <img src="/images/svg/business_page/left_nav_end_white.svg">
+    </div>
+    <div class="buttons">
+      {% for hotbutton in page.hotbar %}
+      <a href= "{{hotbutton.link}}" class="button">
+        <span class="dot"></span>
+        <img src="{{hotbutton.icon}}">
+        <p>{{hotbutton.label}}</p>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="desktop-nav-notch">
+    <img src="/images/svg/business_page/desktop_nav_notch.svg">
+    <div class="notch-menu">
+      <a href="#"><img src="/images/svg/business_page/nav_menu_icon.svg"></a>
+      <a href="#"><img src="/images/svg/logo_icon_white.svg"></a>
+    </div>
+  </div>
 </div>
+
 
 <div class="hotbar-margin business-layout-wrapper">
   <div class="header content content-block">
@@ -18,13 +33,19 @@ title: {{title}}
     <h2>Business Type</h2>
   </div>
   <div class="content content-block">
+    <p>1</p>
+    <br>
     <p>{{page.description | markdownify}}</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </div>
   <div class="content content-block">
+    <p>2</p>
+    <br>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </div>
   <div class="content content-block">
+    <p>3</p>
+    <br>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </div>
 </div>

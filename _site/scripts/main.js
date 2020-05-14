@@ -41,9 +41,9 @@ $(document).scroll(function() {
 //Change banner image on index page.
 function myFunction(x) {
   if (x.matches) { // If media query matches
-    $(".banner-wrapper .image").attr("src","images/svg/banner_image.svg");
+    $(".banner-wrapper .image").attr("src","images/svg/index/banner_image.svg");
   } else {
-    $(".banner-wrapper .image").attr("src","images/svg/desktop_banner_image.svg");
+    $(".banner-wrapper .image").attr("src","images/svg/index/desktop_banner_image.svg");
   }
 }
 
